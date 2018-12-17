@@ -22,7 +22,7 @@ class Student
     end
   end
 
-  def all_students_in_grade_9
+  def self.all_students_in_grade_9
     sql = <<-SQL
       select * from students where grade = 9
     SQL
